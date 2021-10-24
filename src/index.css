@@ -11,3 +11,137 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+li > a {
+  color: white;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+li > a:hover {
+  color: #ec1010;
+}
+
+.general-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogpost-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 30vw;
+}
+
+#home-filler{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fillers {
+  padding: 10px;
+  margin: 20px;
+}
+
+button {
+  color: white;
+  background-color: #00218d;
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  color: #00218d;
+  background-color: #ec1010;
+}
+
+#header-container {
+  display: grid;
+  grid-template-columns: 1fr 10%;
+  background-color: #00218d;
+  padding: 20px;
+  align-content: center;
+}
+
+#inlog-status {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.post-list > li {
+  list-style-type: disc;
+  color: #00218d;
+  transition: 0.5s;
+}
+
+.post-list > li:hover {
+  list-style-type: disc;
+  color: #ec1010;
+}
+
+.post-list > li > a {
+  color: #00218d;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.post-list > li > a:hover {
+  color: #ec1010;
+}
+
+#back-to-overview {
+  align-self: start;
+  width: 30vw;
+}
+
+.blogpost-container {
+  margin-top: 2.5em;
+}
+
+.blogpost-container, #back-to-overview {
+  padding: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #00218d;
+  background-color: rgba(0, 33, 141, 0.1);
+}
